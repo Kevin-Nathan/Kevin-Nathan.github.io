@@ -1,93 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Nathan</title>
-    <link rel="stylesheet" href="web.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kevin Nathan | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-    <h1>Kevin Nathan</h1>
-    <p>Digital Skills Trainer | Technology Enthusiast | Social Impact</p>
-</header>
+<nav class="navbar">
+<div class="logo">Kevin Nathan</div>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#work">Work</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am Kevin Nathan, passionate about technology, digital education, and
-        creating practical learning opportunities for students. My work focuses on
-        teaching digital tools, entrepreneurship, and technology-driven skills that
-        help students prepare for modern workplaces.
-    </p>
-
-    <p>
-        I work with training programs that include Microsoft Office, digital tools,
-        business systems, and creative technologies like printing and design.
-    </p>
+<section class="hero">
+<h1>Hello, I'm <span>Kevin Nathan</span></h1>
+<h2 class="typing"></h2>
+<p>Technology | Digital Education | Innovation</p>
+<a href="#projects" class="btn">View My Work</a>
 </section>
 
-<section id="work">
-    <h2>What I Do</h2>
+<section id="about" class="section">
+<h2>About Me</h2>
 
-    <div class="card">
-        <h3>Digital Skills Training</h3>
-        <p>
-            Training students in Microsoft Office, email communication,
-            spreadsheets, presentations, and cloud tools.
-        </p>
-    </div>
+<p>
+I am passionate about technology, digital learning, and skill development.
+My work focuses on helping students learn practical technology skills such
+as Microsoft Office, digital tools, business systems, and creative
+technologies including printing workflows.
+</p>
 
-    <div class="card">
-        <h3>Technology & Printing</h3>
-        <p>
-            Exploring technologies like sublimation printing, DTF printing,
-            card printers, and digital production workflows.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3>Entrepreneurship & Digital Systems</h3>
-        <p>
-            Introducing students to business tools like ERP, CRM,
-            and digital accounting systems.
-        </p>
-    </div>
-
+<p>
+I enjoy building learning systems, exploring emerging technology, and
+creating educational programs that empower students with future-ready skills.
+</p>
 </section>
 
-<section id="projects">
-    <h2>Projects</h2>
+<section id="skills" class="section">
+<h2>Skills</h2>
 
-    <ul>
-        <li>Digital Skills Curriculum Development</li>
-        <li>Educational Technology Videos</li>
-        <li>Printing Technology Demonstrations</li>
-        <li>Student Skill Development Programs</li>
-    </ul>
+<div class="skills-grid">
 
+<div class="skill-card">
+<h3>Digital Training</h3>
+<p>Microsoft Office, Email Communication, Excel, Digital Literacy</p>
+</div>
+
+<div class="skill-card">
+<h3>Technology Systems</h3>
+<p>ERP Concepts, CRM Tools, Digital Workflows</p>
+</div>
+
+<div class="skill-card">
+<h3>Printing Technologies</h3>
+<p>Sublimation, DTF Printing, Card Printing Systems</p>
+</div>
+
+<div class="skill-card">
+<h3>Content Development</h3>
+<p>Training Materials, Educational Videos, Curriculum Design</p>
+</div>
+
+</div>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
+<section id="projects" class="section">
+<h2>Projects</h2>
 
-    <p>Email: kevin@example.com</p>
-    <p>GitHub: github.com/yourusername</p>
+<div class="projects-grid">
+
+<div class="project-card">
+<h3>Digital Skills Training Program</h3>
+<p>Developed training modules covering MS Office, digital communication,
+and workplace productivity tools.</p>
+</div>
+
+<div class="project-card">
+<h3>Printing Technology Demonstrations</h3>
+<p>Hands-on demonstrations for sublimation printing, DTF printing,
+and card printing technologies.</p>
+</div>
+
+<div class="project-card">
+<h3>Student Skill Development</h3>
+<p>Designed programs helping students gain employable digital
+and entrepreneurial skills.</p>
+</div>
+
+<div class="project-card">
+<h3>Educational Technology Videos</h3>
+<p>Created structured tutorials for technology tools and learning systems.</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="section contact">
+
+<h2>Contact</h2>
+
+<p>Email: kevin@example.com</p>
+<p>GitHub: github.com/yourusername</p>
 
 </section>
 
 <footer>
-    <p>© 2026 Kevin Nathan</p>
+<p>© 2026 Kevin Nathan</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
