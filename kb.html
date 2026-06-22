@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kbabe's Letter ❤️</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -16,69 +17,74 @@ box-sizing:border-box;
 
 body{
 font-family:'Poppins',sans-serif;
-background:linear-gradient(135deg,#ffd6e7,#ffe6f0,#fff0f5);
+background:linear-gradient(135deg,#fff0f5,#ffe6f0,#ffd6e7);
+color:#6d214f;
 overflow-x:hidden;
-color:#7a2349;
 }
 
 /* Floating Hearts */
+
 .hearts span{
 position:fixed;
 bottom:-50px;
-font-size:25px;
+font-size:18px;
 animation:float 10s linear infinite;
-opacity:.7;
+opacity:.5;
+z-index:-1;
 }
 
-.hearts span:nth-child(1){left:10%;animation-duration:8s;}
-.hearts span:nth-child(2){left:30%;animation-duration:12s;}
-.hearts span:nth-child(3){left:50%;animation-duration:10s;}
+.hearts span:nth-child(1){left:8%;animation-duration:8s;}
+.hearts span:nth-child(2){left:25%;animation-duration:10s;}
+.hearts span:nth-child(3){left:45%;animation-duration:12s;}
 .hearts span:nth-child(4){left:70%;animation-duration:9s;}
 .hearts span:nth-child(5){left:90%;animation-duration:11s;}
 
 @keyframes float{
 0%{
-transform:translateY(0) rotate(0deg);
+transform:translateY(0);
 opacity:0;
 }
 20%{
-opacity:1;
+opacity:.8;
 }
 100%{
-transform:translateY(-110vh) rotate(360deg);
+transform:translateY(-120vh);
 opacity:0;
 }
 }
 
+/* Header */
+
 header{
-height:100vh;
+min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-flex-direction:column;
+padding:20px;
 text-align:center;
-background:linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.4)),
-url("https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=1400");
-background-size:cover;
+}
+
+.hero{
+max-width:700px;
+animation:fadeUp 1.5s;
 }
 
 h1{
-font-size:4rem;
 font-family:'Dancing Script',cursive;
+font-size:4rem;
 color:#d63384;
-animation:fade 2s;
+margin-bottom:15px;
 }
 
-.subtitle{
-margin-top:20px;
-font-size:1.2rem;
-max-width:700px;
+.hero p{
+font-size:1.1rem;
+line-height:1.8;
 }
 
-@keyframes fade{
+@keyframes fadeUp{
 from{
 opacity:0;
-transform:translateY(40px);
+transform:translateY(50px);
 }
 to{
 opacity:1;
@@ -86,16 +92,22 @@ transform:translateY(0);
 }
 }
 
-.section{
-padding:80px 10%;
+/* Posts */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px 80px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
 }
 
 .card{
 background:white;
 border-radius:25px;
-padding:30px;
-margin-bottom:40px;
-box-shadow:0 15px 40px rgba(255,105,180,.15);
+overflow:hidden;
+box-shadow:0 10px 30px rgba(255,105,180,.15);
 transition:.4s;
 }
 
@@ -105,34 +117,96 @@ transform:translateY(-8px);
 
 .card img{
 width:100%;
-border-radius:20px;
-margin-top:20px;
+height:220px;
+object-fit:cover;
 }
 
-h2{
+.content{
+padding:25px;
+}
+
+.content h2{
 font-family:'Dancing Script',cursive;
-font-size:2.3rem;
+font-size:2rem;
 margin-bottom:15px;
 color:#d63384;
 }
 
-footer{
+.content p{
+line-height:1.8;
+font-size:.95rem;
+}
+
+/* Love Letter */
+
+.letter{
+max-width:800px;
+margin:80px auto;
+background:white;
+padding:50px 35px;
+border-radius:30px;
+box-shadow:0 10px 30px rgba(255,105,180,.15);
 text-align:center;
-padding:40px;
+}
+
+.letter h2{
+font-family:'Dancing Script',cursive;
+font-size:3rem;
+color:#d63384;
+margin-bottom:25px;
+}
+
+.letter p{
+line-height:2;
 font-size:1rem;
-background:#ffc2d1;
 }
 
-.love{
+/* Footer */
+
+footer{
+padding:50px 20px;
+text-align:center;
+background:#ffc8dd;
+}
+
+footer h3{
+font-family:'Dancing Script',cursive;
 font-size:2rem;
-animation:pulse 2s infinite;
+margin-bottom:15px;
+color:#d63384;
 }
 
-@keyframes pulse{
-50%{
-transform:scale(1.15);
+/* Mobile */
+
+@media(max-width:768px){
+
+h1{
+font-size:3rem;
 }
+
+.hero p{
+font-size:1rem;
 }
+
+.container{
+grid-template-columns:1fr;
+}
+
+.card img{
+height:180px;
+}
+
+.letter{
+padding:35px 25px;
+margin:50px 20px;
+}
+
+.letter h2{
+font-size:2.4rem;
+}
+
+}
+
 </style>
 </head>
 <body>
@@ -146,65 +220,90 @@ transform:scale(1.15);
 </div>
 
 <header>
+<div class="hero">
 <h1>Kbabe's Letter ❤️</h1>
-<p class="subtitle">
-For my dearest JBabe 💕<br>
-A little corner on the internet filled with love, flowers, chocolates, and beautiful memories.
+
+<p>
+For my sweetest JBabe 💕<br><br>
+A little world made with love, flowers, chocolates, and countless kisses.
+No matter how far apart we are, you are always in my heart. ❤️
 </p>
+</div>
 </header>
 
-<section class="section">
+
+<div class="container">
 
 <div class="card">
-<h2>🌹 Roses for My JBabe</h2>
+<img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=700" alt="">
+<div class="content">
+<h2>🌹 Roses For You</h2>
 <p>
-Every rose reminds me of your smile, and every petal carries a thousand kisses.
-No matter how busy life gets, you are always my favorite thought.
-❤️
+Every rose reminds me of your beautiful smile. If I could, I'd fill your room with flowers and kiss you good morning every day. ❤️
 </p>
-
-<img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1000">
+</div>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=700" alt="">
+<div class="content">
 <h2>🍫 Sweet Like Chocolate</h2>
 <p>
-If love had a flavor, it would taste sweeter than chocolate because every moment with you makes life sweeter.
-Thank you for filling my heart with endless happiness.
-🥰
+Life becomes sweeter with every message, every laugh, and every moment I spend with you. You're my favorite sweetness. 🥰
 </p>
-
-<img src="https://images.unsplash.com/photo-1511381939415-e44015466834?w=1000">
+</div>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?w=700" alt="">
+<div class="content">
 <h2>💕 Missing You</h2>
 <p>
-Distance only makes my heart love you more.
-I miss your smile, your hugs, your kisses, and all the little moments we share.
-Can't wait to hold you close again.
-😘
+Even on busy days, my thoughts always find their way back to you. I miss your hugs, your kisses, and your beautiful eyes. 😘
 </p>
-
-<img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=1000">
+</div>
 </div>
 
 <div class="card">
-<h2>💝 Forever Us</h2>
+<img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=700" alt="">
+<div class="content">
+<h2>💖 Forever Us</h2>
 <p>
-You're my peace, my happiness, my best friend, and my greatest blessing.
-No matter what tomorrow brings, I promise to keep loving you with all my heart.
-❤️
+You're my peace, my happiness, and my favorite person. I promise to love you today, tomorrow, and forever. ❤️
 </p>
-
-<img src="https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?w=1000">
+</div>
 </div>
 
-</section>
+</div>
+
+
+<div class="letter">
+
+<h2>💌 A Letter To JBabe</h2>
+
+<p>
+My love,<br><br>
+
+Thank you for making ordinary days feel magical and for filling my heart with happiness. Every smile of yours is my favorite sight and every moment with you is my favorite memory.<br><br>
+
+Distance may keep us apart sometimes, but nothing can stop me from loving you. You are my peace, my joy, my home, and my forever person. ❤️<br><br>
+
+Forever Yours,<br>
+<b>Kbabe ❤️</b>
+
+</p>
+
+</div>
+
 
 <footer>
-<div class="love">❤️ Forever Yours, Kbabe ❤️</div>
-<p>Made with endless love for JBabe 💕</p>
+
+<h3>❤️ Made With Love ❤️</h3>
+
+<p>
+For JBabe 🌹🍫💕
+</p>
+
 </footer>
 
 </body>
