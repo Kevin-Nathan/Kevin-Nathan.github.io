@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kbabe's Letter ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#ffd6e7,#ffe6f0,#fff0f5);
+overflow-x:hidden;
+color:#7a2349;
+}
+
+/* Floating Hearts */
+.hearts span{
+position:fixed;
+bottom:-50px;
+font-size:25px;
+animation:float 10s linear infinite;
+opacity:.7;
+}
+
+.hearts span:nth-child(1){left:10%;animation-duration:8s;}
+.hearts span:nth-child(2){left:30%;animation-duration:12s;}
+.hearts span:nth-child(3){left:50%;animation-duration:10s;}
+.hearts span:nth-child(4){left:70%;animation-duration:9s;}
+.hearts span:nth-child(5){left:90%;animation-duration:11s;}
+
+@keyframes float{
+0%{
+transform:translateY(0) rotate(0deg);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(-110vh) rotate(360deg);
+opacity:0;
+}
+}
+
+header{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+background:linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.4)),
+url("https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=1400");
+background-size:cover;
+}
+
+h1{
+font-size:4rem;
+font-family:'Dancing Script',cursive;
+color:#d63384;
+animation:fade 2s;
+}
+
+.subtitle{
+margin-top:20px;
+font-size:1.2rem;
+max-width:700px;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.section{
+padding:80px 10%;
+}
+
+.card{
+background:white;
+border-radius:25px;
+padding:30px;
+margin-bottom:40px;
+box-shadow:0 15px 40px rgba(255,105,180,.15);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+border-radius:20px;
+margin-top:20px;
+}
+
+h2{
+font-family:'Dancing Script',cursive;
+font-size:2.3rem;
+margin-bottom:15px;
+color:#d63384;
+}
+
+footer{
+text-align:center;
+padding:40px;
+font-size:1rem;
+background:#ffc2d1;
+}
+
+.love{
+font-size:2rem;
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+50%{
+transform:scale(1.15);
+}
+}
+</style>
+</head>
+<body>
+
+<div class="hearts">
+<span>❤️</span>
+<span>💕</span>
+<span>🌹</span>
+<span>💖</span>
+<span>❤️</span>
+</div>
+
+<header>
+<h1>Kbabe's Letter ❤️</h1>
+<p class="subtitle">
+For my dearest JBabe 💕<br>
+A little corner on the internet filled with love, flowers, chocolates, and beautiful memories.
+</p>
+</header>
+
+<section class="section">
+
+<div class="card">
+<h2>🌹 Roses for My JBabe</h2>
+<p>
+Every rose reminds me of your smile, and every petal carries a thousand kisses.
+No matter how busy life gets, you are always my favorite thought.
+❤️
+</p>
+
+<img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1000">
+</div>
+
+<div class="card">
+<h2>🍫 Sweet Like Chocolate</h2>
+<p>
+If love had a flavor, it would taste sweeter than chocolate because every moment with you makes life sweeter.
+Thank you for filling my heart with endless happiness.
+🥰
+</p>
+
+<img src="https://images.unsplash.com/photo-1511381939415-e44015466834?w=1000">
+</div>
+
+<div class="card">
+<h2>💕 Missing You</h2>
+<p>
+Distance only makes my heart love you more.
+I miss your smile, your hugs, your kisses, and all the little moments we share.
+Can't wait to hold you close again.
+😘
+</p>
+
+<img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=1000">
+</div>
+
+<div class="card">
+<h2>💝 Forever Us</h2>
+<p>
+You're my peace, my happiness, my best friend, and my greatest blessing.
+No matter what tomorrow brings, I promise to keep loving you with all my heart.
+❤️
+</p>
+
+<img src="https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?w=1000">
+</div>
+
+</section>
+
+<footer>
+<div class="love">❤️ Forever Yours, Kbabe ❤️</div>
+<p>Made with endless love for JBabe 💕</p>
+</footer>
+
+</body>
+</html>
