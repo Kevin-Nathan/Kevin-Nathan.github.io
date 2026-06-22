@@ -22,15 +22,19 @@ color:#6d214f;
 overflow-x:hidden;
 }
 
-/* Floating Hearts */
+.hearts{
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 999;
+}
 
-/* Floating Hearts */
 .hearts span{
-position:fixed;
-bottom:-50px;
-font-size:25px;
-animation:float 10s linear infinite;
-opacity:.7;
+    position: absolute;
+    bottom: -50px;
+    font-size: 25px;
+    animation: float 10s linear infinite;
+    opacity: .7;
 }
 
 .hearts span:nth-child(1){left:10%;animation-duration:8s;}
